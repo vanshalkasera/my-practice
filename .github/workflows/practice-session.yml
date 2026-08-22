@@ -1,6 +1,9 @@
 # Workflow name
 name: parallel-job-example
 
+env:
+  DEBUG: 'false'
+
 # Triggers for the workflow
 on:
   # Manual trigger using the workflow_dispatch event
@@ -25,10 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Set up Node.js 
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: latest
 
@@ -51,10 +54,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Set up Node.js 
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: latest
 
@@ -78,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish test results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: test-results.xml
