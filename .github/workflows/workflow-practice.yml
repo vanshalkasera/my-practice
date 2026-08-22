@@ -27,6 +27,6 @@ jobs:
     #     run: echo "Workflow practice completed successfully!"
       - name: Install dependencies and test build #modified and added pipe to manage indentation and execute all shell commands by using single run
         run: |
-          npm install
+          npm ci
           npm test
           echo "Workflow practice completed successfully!"
