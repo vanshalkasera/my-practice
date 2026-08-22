@@ -1,5 +1,8 @@
 name: "Workflow Practice"
 on:
+  workflow_dispatch:
+#   schedule:
+#     - cron: '0 0 * * *'  # Runs every day at midnight UTC  
   push:
     branches:
       - main
