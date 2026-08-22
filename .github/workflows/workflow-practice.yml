@@ -5,10 +5,10 @@ on:
 #     - cron: '0 0 * * *'  # Runs every day at midnight UTC  
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
