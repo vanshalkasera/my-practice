@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
 #   schedule:
 #     - cron: '0 0 * * *'  # Runs every day at midnight UTC  
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
   pull_request:
     branches:
       - master

@@ -1,8 +1,8 @@
 name : holiday-workflow
 on:
-  push:
-    branches:
-      - master
+#   push:
+#     branches:
+#       - master
 env:
   MONTH_OF_YEAR: December
   CURRENT_YEAR: 2023
