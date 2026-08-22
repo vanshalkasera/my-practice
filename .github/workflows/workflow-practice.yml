@@ -1,0 +1,24 @@
+name: "Workflow Practice"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name : Set up Node.js 24
+        uses: actions/setup-node@v7
+        with:
+          node-version: latest
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: print message
+        run: echo "Workflow practice completed successfully!"
