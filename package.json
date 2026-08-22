@@ -2,7 +2,8 @@
   "name": "my-practice",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Tests passed!\""
+    "test": "echo \"Tests passed!\"",
+    "notify": "echo \"Notification sent!\""
   },
   "dependencies": {
     "clean": "^4.0.2"

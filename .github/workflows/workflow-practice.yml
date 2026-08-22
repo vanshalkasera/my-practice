@@ -30,3 +30,7 @@ jobs:
           npm ci
           npm test
           echo "Workflow practice completed successfully!"
+      - name: Notify on completion
+        if: always() # This ensures that the notification step runs regardless of the previous steps' success or failure
+        run: |
+          npm run notify
