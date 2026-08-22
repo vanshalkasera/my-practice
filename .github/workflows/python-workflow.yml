@@ -13,5 +13,5 @@ jobs:
     # Build
     - uses: actions/setup-python@v4
       with:
-        python-version: latest
+        python-version: '3.10'
     - run: python my_script.py
